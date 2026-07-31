@@ -6,7 +6,7 @@
 
 2. Copied the link to a [GTF file](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_46/gencode.v46.annotation.gtf.gz)
 
-**GTF File** --> Gene Transfer Format annotation file 
+    - **GTF File** --> Gene Transfer Format annotation file 
     - holds info about gene structures (exons, transcripts, coding regions)
     - 9 columns
     - column 9 is the attributes column 
