@@ -1,0 +1,3 @@
+262757	exon
+34913	mRNA
+6018	region

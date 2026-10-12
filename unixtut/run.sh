@@ -24,9 +24,13 @@ cat SGD_features.tab | cut -f 2 | grep ORF | wc -l
 cat SGD_features.tab | cut -f 2 > types.txt
 
 # Sort the types. Count unique types and sort by most frequent
+# sort --> arranges identical lines together
+# uniq -c --> counts the number of identical lines (only works on sorted input)
+# sort -rn --> sorts the counts in reverse numerical order (descending)
 cat types.txt | sort | uniq -c | sort -rn | head
 
 # Improved way to count unique feature types and sort by frequency
+# This output is the same as the previous command but uses a single command instead of three.
 cat types.txt | sort-uniq-count-rank | head
 
 # Last 3 commands in one line and show the beginning of the output
