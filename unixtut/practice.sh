@@ -13,6 +13,9 @@ cat zonotrichia_albicollis.gff3 | wc -l
 #Count the number of sequence regions in the gff3 file
 cat zonotrichia_albicollis.gff3 | grep "##sequence-region" | wc -l
 
+#Create a clean version of the gff3 file by removing comment lines and store it in a new file
+cat zonotrichia_albicollis.gff3 | grep -v "^#" > clean_zonotrichia_albicollis.gff3
+
 #Extract the feature type column from the gff3 file and store it in a new file
 cat clean_zonotrichia_albicollis.gff3 | cut -f 3 > features_zonotrichia.txt
 
