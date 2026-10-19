@@ -1,8 +1,10 @@
 # Analyzing GFF3 Files
 
 ## Given Task
-Source: Biostar Handbook lecture 2
-Task: The Ensemble Public FTP site provides biological information for many species in various formats. For this assignment, we will investigate files in the GFF3 format found at:
+> [!NOTE]
+> The questions and prompts in this section are sourced from **FastTrack Bioinformatics 2025** at **Penn State**
+
+The Ensemble Public FTP site provides biological information for many species in various formats. For this assignment, we will investigate files in the GFF3 format found at:
 https://ftp.ensembl.org/pub/current_gff3/. Select an organism, download its corresponding GFF file then investigate this file with Unix command line tools.
 
 Questions to answer:
