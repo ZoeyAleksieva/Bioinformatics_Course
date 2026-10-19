@@ -32,3 +32,25 @@ cat cleanGFFacinetobacter.gff3 | awk '$3 == "gene"' > genes_acinetobacter.gff3
 
 grep $'\tgene\t' cleanGFFacinetobacter.gff3 > genes_acinetobacter2.gff3
 ```
+
+* I dragged the simplified GFF on the track below the main GFF.
+![GFF Comparison SS](gff_compare_ss.png)
+I can see that the botton track is only showing actual genes whereas the top track is showing
+the mRNA which has that specific gene as its 'parent'. The pop up annotations also list information
+about the exon that that region of the mRNA contains and info about its associated coding sequence.
+ 
+* The following screenshots show what it looks like when the translation table is in the wrong orientation
+versus the correct orientation when you make the arrow point in the same way as the "<" character on the 
+gene. In the wrong orientation, none of the ORFs in the table list amino acids that match up to those listed
+on the GFF track but in the correct orientation they do match. The green start and red stop codons also only
+align when the table is in the correct orientation.
+<table>
+  <tr>
+    <td><img src="wrong_start.png" alt="Gene start when wrong orientation table" width="100%"></td>
+    <td><img src="wrong_end.png" alt="Gene end when wrong orientation table" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="right_start.png" alt="Gene start when correct orientation table" width="100%"></td>
+    <td><img src="right_end.png" alt="Gene end when correct orientation table" width="100%"></td>
+  </tr>
+</table>

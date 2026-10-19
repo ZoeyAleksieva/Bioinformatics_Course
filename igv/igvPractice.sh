@@ -34,5 +34,4 @@ cat featureTypes.txt | sort-uniq-count-rank > sorted_features_acinetobacter.txt
 cat cleanGFFacinetobacter.gff3 | awk '$3 == "gene"' > genes_acinetobacter.gff3
 
 # Alternatively, you can use grep to filter lines containing "gene" in the third column:
-
 grep $'\tgene\t' cleanGFFacinetobacter.gff3 > genes_acinetobacter2.gff3
